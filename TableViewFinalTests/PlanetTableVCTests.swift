@@ -46,9 +46,9 @@ class PlanetTableVCSpec: QuickSpec {
                     
                     testVC.generatePlanetInfo()
                     
-                    expect(testVC.planets.count).to(equal(2))
+                    expect(testVC.planets?.count).to(equal(2))
                     
-                    for planet in testVC.planets {
+                    for planet in testVC.planets! {
                         
                         switch planet.name {
                             
